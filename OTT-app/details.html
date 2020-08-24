@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OTT APP</title>
+  
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="styles/styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+<body id="color-mode">
+    <header class="header">
+      <div class="header__logo">
+        <img alt="amazon__logo" src="img/amazon-prime.png" />
+      </div>
+
+      <div class="header__search">
+        <a class="search__open" onclick="openSearch();">
+          <span class="material-icons">
+            search
+          </span>
+        </a>
+        <div id="search-menu" class="search__menu">
+          <input type="text" class="search__input" />
+          <button value="search" class="search__btn">Search</button>
+        </div>
+      </div>
+
+      <div class="header__profile">
+        <a class="profile__open" onclick="openProfile();">
+          <span class="material-icons">
+            account_circle
+          </span>
+        </a>
+        <ul id="profile-menu" class="profile__menu">
+          <li>
+            <a onclick="toggleColorMode();">Color Mode</a>
+          </li>
+          <li>
+            <a href="#">Account</a>  
+          </li>
+          <li>
+            <a href="#">Subscription</a>
+          </li>
+          <li>
+            <a href="#">Sign Out</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="header__navigation">
+        <button id="hamburger" onclick="openNavigation();" class="hamburger hamburger--elastic" type="button" aria-label="Menu" aria-controls="navigation">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+        <nav class="navigation__menu" id="navigation">
+          <ul>
+            <li><a href="#">Videos</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Extras</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    
+    <main>
+      <div class="description">
+        <img src="img/category-banners/visual_mxmid_279828.jpeg" class="background" />
+        <div class="description__title">
+          Description title
+        </div>
+        <div class="description__text">
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem
+          
+          <div class="actors__label">Acteurs:</div>
+          <ul class="actors__list">
+            <li>Kerry Fox</li>
+            <li>Robert Taylor</li>
+            <li>Reef Ireland</li>
+          </ul>
+          
+          <a class="link__back" href="index.html">Back</a>
+        </div>
+       
+      </div>
+    </main>
+    
+    <footer>
+      <div class="column">
+        <ul>
+          <li><a href="https://www.primevideo.com/help/ref=dvm_MLP_EU_privacy?nodeId=202064890" target="_blank">Terms & Conditions</a></li>
+          <li><a href="https://www.amazon.com/ap/signin?accountStatusPolicy=P1&clientContext=258-3806163-5349345&language=nl_NL&openid.assoc_handle=amzn_prime_video_desktop_us&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.mode=checkid_setup&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.ns.pape=http%3A%2F%2Fspecs.openid.net%2Fextensions%2Fpape%2F1.0&openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.primevideo.com%2Fauth%2Freturn%2Fref%3Dav_auth_ap%3F_encoding%3DUTF8%26language%3Dnl_NL%26location%3D%252Fhelp%252Fcontact-us%252Fref%253Ddv_web_auth_no_re_sig%253F_encoding%253DUTF8%2526language%253Dnl_NL" target="_blank">Contact</a></li>
+          <li><a href="https://www.amazon.com/gp/help/customer/display.html?nodeId=201909010" target="_blank">Privacy</a></li>
+        </ul>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="src/js/swipers.js"></script>
+    <script src="src/js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+.description {
+    .background {
+        @include md {
+            max-width: 700px;
+            left: 50%;
+            position: relative;
+            transform: translateX(-50%);
+        }
+
+    }
+
+    .description__title {
+        font-size:18px;
+        font-weight: bold;
+    }
+
+    .description__title,
+    .description__text {
+        z-index: 1;
+        padding: 8px;
+        color:black;
+
+        @include md {
+            max-width: 700px;
+            left: 50%;
+            position: relative;
+            transform: translateX(-50%);
+        }
+    }
+
+    .actors__label {
+        margin: 16px;
+        font-weight: bold;
+    }
+
+    .actors__list {
+        margin-bottom: 16px;
+    }
+    
+    .link__back { 
+        text-decoration: underline;
+    }
+}
+
+body.dark {
+    *,
+    .description__title,
+    .description__text {
+      color: white;
+    }
+}

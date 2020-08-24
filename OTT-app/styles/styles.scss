@@ -1,0 +1,40 @@
+@import 'base/vars';
+@import 'base/mixins';
+@import 'base/animations';
+@import "../node_modules/hamburgers/_sass/hamburgers/hamburgers.scss";
+@import 'components/header';
+@import 'components/swipers';
+@import 'components/categories';
+@import 'components/details';
+@import 'components/footer';
+
+
+*, body, html {
+  font-family: arial;
+  margin: 0;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hidden {
+  display: none;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+body.dark {
+  background: #333333;
+}

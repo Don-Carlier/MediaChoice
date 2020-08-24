@@ -1,0 +1,58 @@
+.category__container {
+    height: 168px;
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+
+    @include md {
+        height: 280px;
+    }
+
+    .category__name {
+        height: 40px;
+        line-height: 40px;
+        color: white;
+        background:#00aae2;
+        padding: 0 16px;
+        margin-top: 16px;
+    }
+}
+
+.title__main,
+.title__sub {
+    background: rgba(255,255,255, .5);
+    position: absolute; 
+    top: 16px;
+    left: 48px;
+    font-size: 24px;
+    padding: 8px;
+    color: black;
+}
+
+.title__sub {
+    top: 60px;
+    font-size: 18px;
+}
+
+.category__container {
+    .title__main,
+    .title__sub {
+        background: rgba(255,255,255, .5);
+        position: absolute;
+        font-size: 18px;
+        padding: 8px;
+        height: 40px;
+        line-height: 27px;        
+        top: 0;
+        width: 100%;
+        left: 0;
+    }
+
+    .title__sub {
+        top: 40px;
+        font-size: 14px;
+        height: 34px;
+        line-height: 10px;
+    }
+}
+

@@ -1,0 +1,39 @@
+footer {
+  display: flex;
+  justify-content: center;
+  background: $navy-blue;
+  padding: 8px;
+  flex-direction: column;
+  width: 100%;
+  bottom: 0;
+  position: relative;
+  z-index: 0;
+
+  .column {
+    padding: 8px;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+
+    @include md {
+        border-bottom: 0;
+        flex-direction: row;
+    }
+
+    ul,
+    ul li {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+
+      a {
+        color: white;
+      }
+    }
+
+    ul li {
+      min-height: 24px;
+      line-height: 40px;
+    } 
+  }
+}

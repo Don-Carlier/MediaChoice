@@ -1,0 +1,36 @@
+:root {
+    --swiper-theme-color: #00aae2!important;
+}
+
+.category__container { 
+    .swiper-button-prev,
+    .swiper-button-next {
+        left: 0;
+        height: calc(100% - 60px);
+        right: auto;
+        width: 40px;
+        top: 77px;
+        background:rgba(255,255,255, 0.75);
+
+        @include md {
+            display: none;
+        }
+
+    }
+
+    .swiper-button-next {
+        left: auto;
+        right: 0;
+
+    }
+
+    @include md {
+        &:hover {
+            .swiper-button-prev,
+            .swiper-button-next { 
+                display: flex;
+            }
+        }
+
+    }
+}
