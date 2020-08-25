@@ -1,0 +1,17 @@
+{
+  "name": "pay",
+  "version": "0.0.1",
+  "description": "pay opdracht",
+  "main": "js/index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.26.10"
+  },
+  "dependencies": {
+    "hamburgers": "^1.1.3"
+  }
+}
