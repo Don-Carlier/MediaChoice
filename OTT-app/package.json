@@ -1,7 +1,7 @@
 {
-  "name": "pay",
+  "name": "MediaChoice",
   "version": "0.0.1",
-  "description": "pay opdracht",
+  "description": "MediaChoice  opdracht",
   "main": "js/index.js",
   "scripts": {
     "test": "test"
